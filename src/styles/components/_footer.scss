@@ -1,0 +1,16 @@
+.footer-container {
+    height: 160px;
+    background-color: $color-10;
+    padding-left: 12px;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+  }
+  
+  .icon-social {
+    font-size: 38px;
+    color: $color-7;
+    margin-right: 20px;
+  }

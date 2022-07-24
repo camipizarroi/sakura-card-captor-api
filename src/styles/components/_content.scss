@@ -1,0 +1,21 @@
+.background-content {
+    background-color: $color-1;
+    height: 100%;
+    padding: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.card-img-top{
+    width: 210px;
+    height: 470px;
+    align-self: center;
+}
+
+.card-deck{
+    padding: 25px;
+}
+
+.card{
+    padding: 5px;
+    
+}

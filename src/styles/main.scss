@@ -1,0 +1,16 @@
+// UI settings
+@import './theme/colors';
+
+// components
+@import './components/header';
+@import './components/footer';
+@import './components/content';
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 160px;
+  }
