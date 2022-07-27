@@ -1,6 +1,7 @@
 .container-navbar {
     background-color: $color-10;
     height: 160px;
+    padding: 0px 45px;
 }
 
 .text-navbar {
@@ -23,6 +24,37 @@
     margin-right: 30px;
 }
 
-.logo {
+.logo  {
     height: 100px;
+}
+
+.kero {
+    height: 100px;
+}
+
+.list {
+    align-items: center;
+}
+
+@media (min-width: 280px) and (max-width: 576px) {
+    .container-navbar {
+        height: auto;
+        padding: 10px 15px 0px 15px;
+    }
+
+    .logo {
+        height: 50px;
+    } 
+
+    .kero {
+        display: none;
+    }
+
+    .container-link {
+        margin-right: 0px;
+    }
+
+    .list {
+        align-items: flex-start;
+    }
 }

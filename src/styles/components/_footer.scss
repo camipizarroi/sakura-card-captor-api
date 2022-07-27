@@ -1,7 +1,7 @@
 .footer-container {
     height: 160px;
     background-color: $color-10;
-    padding-left: 12px;
+    padding: 0px 45px;
     display: flex;
     justify-content: start;
     position: absolute;
@@ -14,3 +14,14 @@
     color: $color-7;
     margin-right: 20px;
   }
+
+  @media (min-width: 280px) and (max-width: 576px) {
+    .footer-container {
+        padding: 0px 27px 0px 27px;
+        justify-content: space-around;
+    }
+
+    .icon-social {
+      margin-right: 0px;
+    }
+}

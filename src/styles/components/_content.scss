@@ -19,3 +19,31 @@
     padding: 5px;
     
 }
+
+.primary-btn {
+    align-items: center;
+    background-color: $color-11;
+    border-radius: 100px;
+    border-style: none;
+    color: $color-2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    height: 38px;
+    line-height: 19px;
+    text-align: center;
+    width: 100%;
+}
+
+.primary-btn:hover {
+    background-color: $color-2;
+    color: $color-10;
+    border: 2px solid $color-11;
+}
+
+
+@media (min-width: 280px) and (max-width: 576px) {
+    .navbar-items {
+        justify-content: start;
+    }
+
+}

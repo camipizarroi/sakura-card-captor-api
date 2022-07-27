@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './../styles/images/logo.png';
+import kero from './../styles/images/kero.png';
 
 export const Header = () => {
   return (
@@ -11,11 +12,12 @@ export const Header = () => {
       </button>
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <div className='collapse navbar-collapse d-flex navbar-items' id='navbarNavAltMarkup'>
-          <div className='navbar-nav'>
+          <div className='navbar-nav list'>
             <a className='nav-link text-navbar container-link' aria-current='page' href='/#'>SCHEDULE</a>
             <a className='nav-link text-navbar container-link' href='/#'>SHOWS</a>
             <a className='nav-link text-navbar container-link' href='/#'>MARATHONS</a>
             <a className='nav-link text-navbar'  href='/#' tabIndex='-1'>PODCAST</a>
+            <a href='/#' ><img className='kero' src={kero} alt="Kero" /></a>
           </div>
         </div>
       </div>
