@@ -17,7 +17,7 @@ export const Header = () => {
             <a className='nav-link text-navbar container-link' href='/#'>SHOWS</a>
             <a className='nav-link text-navbar container-link' href='/#'>MARATHONS</a>
             <a className='nav-link text-navbar'  href='/#' tabIndex='-1'>PODCAST</a>
-            <a href='/#' ><img className='kero' src={kero} alt="Kero" /></a>
+            <a href='/#' ><img className='kero' src={kero} alt="kero" /></a>
           </div>
         </div>
       </div>
