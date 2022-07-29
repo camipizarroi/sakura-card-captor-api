@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sakura-card-captor-api/static/css/main.d98f88a4.css",
+    "main.js": "/sakura-card-captor-api/static/js/main.36dd9c6f.js",
+    "static/media/kero.png": "/sakura-card-captor-api/static/media/kero.1c7d5e829961e8271da5.png",
+    "static/media/logo.png": "/sakura-card-captor-api/static/media/logo.dc5724c6fca873a3871f.png",
+    "index.html": "/sakura-card-captor-api/index.html",
+    "main.d98f88a4.css.map": "/sakura-card-captor-api/static/css/main.d98f88a4.css.map",
+    "main.36dd9c6f.js.map": "/sakura-card-captor-api/static/js/main.36dd9c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d98f88a4.css",
+    "static/js/main.36dd9c6f.js"
+  ]
+}
