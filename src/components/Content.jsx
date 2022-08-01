@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { sakuraAxios } from '../api/character';
+import { sakuraAxios } from '../api/CardApi';
 import { BASE } from '../environments/environments';
-
+import { Link } from 'react-router-dom';
 
 export const Content = () => {
   const [ cards, setCard ] = useState([]);
 
-
   useEffect(() => {
-    getCharacter();
+    getCards();
   }, []);
 
-
-  const getCharacter = async () => {
+  const getCards = async () => {
     try {
       const response = await sakuraAxios.get( BASE );
       setCard( response.data );
@@ -21,14 +19,13 @@ export const Content = () => {
     }
   }
 
-  console.log(cards.data);
   return (
-    <div className='d-flex w-100 background-content justify-content-center'>    
+    <div className='d-flex background-content justify-content-center'>    
       {
         cards.data && cards.data
-          .filter( card => card.hasOwnProperty( 'clowCard' ) && card.clowCard !== "")
+          .filter( card => card.hasOwnProperty( 'clowCard' ) && card.clowCard !== "" )
           .map( filteredCard => (
-          <div className="card-deck">
+          <div key={ filteredCard.kanji } className="card-deck-content">
           <div className="card">
             <img className="card-img-top" src={ filteredCard.clowCard } alt='card'/>
             <div className="card-body">
@@ -36,7 +33,7 @@ export const Content = () => {
               <p className="card-text"> Spanish Name : { filteredCard.spanishName }</p>
             </div>
             <div className="card-footer">
-              <button className='primary-btn'> More Info </button>
+               <Link to={{pathname:"/Card/" + filteredCard.cardNumber,state:{stateParam: true}}} ><button className='primary-btn'>More info</button></Link> 
             </div>
           </div>
           </div>

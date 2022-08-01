@@ -5,6 +5,7 @@
 @import './components/header';
 @import './components/footer';
 @import './components/content';
+@import './components/card';
 
 html {
   min-height: 100%;
@@ -12,6 +13,12 @@ html {
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   margin-bottom: 160px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $color-2;
 }

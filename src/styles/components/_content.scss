@@ -1,5 +1,5 @@
 .background-content {
-    background-color: $color-1;
+    background-color: $color-12;
     height: 100%;
     padding: 40px 30px;
     flex-wrap: wrap;
@@ -11,13 +11,12 @@
     align-self: center;
 }
 
-.card-deck{
+.card-deck-content{
     padding: 25px;
 }
 
 .card{
     padding: 5px;
-    
 }
 
 .primary-btn {
@@ -36,14 +35,7 @@
 
 .primary-btn:hover {
     background-color: $color-2;
-    color: $color-10;
+    color: $color-1;
     border: 2px solid $color-11;
 }
 
-
-@media (min-width: 280px) and (max-width: 576px) {
-    .navbar-items {
-        justify-content: start;
-    }
-
-}
